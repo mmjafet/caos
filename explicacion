@@ -1,0 +1,31 @@
+
+1. **Ecuación Logística**:
+   - El sistema que se usa es la **ecuación logística**, una ecuación simple que modela el crecimiento de una población:
+   \[
+   x_{n+1} = r \cdot x_n \cdot (1 - x_n)
+   \]
+   Donde:
+   - \( x_n \) es la población en la generación \( n \).
+   - \( r \) es la tasa de crecimiento.
+   
+   A medida que \( r \) varía, el comportamiento del sistema cambia y puede volverse caótico.
+
+2. **Parámetros del código**:
+   - `r_min` y `r_max` determinan los valores mínimo y máximo de la tasa de crecimiento \( r \).
+   - `num_r` es el número de valores de \( r \) que se calculan.
+   - `num_iterations` es el número total de iteraciones para cada valor de \( r \).
+   - `last_iterations` define cuántas iteraciones finales se grafican para mostrar el comportamiento asintótico del sistema.
+
+3. **Iteraciones**:
+   - El sistema es iterado para muchos valores de \( r \), y después de alcanzar el estado estacionario (después de un número de iteraciones iniciales), se grafican las últimas iteraciones para mostrar el comportamiento a largo plazo.
+
+4. **Visualización**:
+   - El gráfico resultante muestra cómo el valor de \( x \) (la población) cambia a medida que \( r \) varía.
+   - Inicialmente, el sistema es estable y converge a un valor único, pero a medida que \( r \) aumenta, se producen bifurcaciones donde el sistema comienza a oscilar entre dos valores, luego cuatro, y eventualmente se vuelve caótico.
+
+### Interpretación:
+- Para valores bajos de \( r \), el sistema converge a un valor estable.
+- A medida que \( r \) aumenta, se observa un comportamiento periódico, y después de ciertos puntos de bifurcación, el sistema entra en el caos.
+- El gráfico es una representación visual del paso de estabilidad a caos en sistemas dinámicos.
+
+Este código genera un diagrama de bifurcación clásico para la ecuación logística, donde se pueden observar las bifurcaciones y la transición al caos.
