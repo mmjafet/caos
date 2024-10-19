@@ -1,8 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
-
-# Número de gotas
 n_drops = 10
 drop_speed = 0.02  # Velocidad de caída
 
